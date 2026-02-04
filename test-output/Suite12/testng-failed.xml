@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite12]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test12(failed)">
+    <classes>
+      <class name="tests.BrokenLinkTests">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyBrokenLinks"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tests.BrokenLinkTests -->
+      <class name="tests.EmployeeTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="addEmployeeTest"/>
+        </methods>
+      </class> <!-- tests.EmployeeTest -->
+      <class name="tests.NavigationTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="verifyNavigationToAllSections"/>
+        </methods>
+      </class> <!-- tests.NavigationTest -->
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyAdminLogin"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.LogoutTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="verifyLogOut"/>
+        </methods>
+      </class> <!-- tests.LogoutTest -->
+    </classes>
+  </test> <!-- Test12(failed) -->
+</suite> <!-- Failed suite [Suite12] -->
